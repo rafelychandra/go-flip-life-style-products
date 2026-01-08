@@ -32,7 +32,7 @@ internal/\
 └ repositories/    # Data access layer\
 └─ mock/        # Repository mocks\
 └ services/        # Business logic\
-└─ mock/        # Service mocks\
+└─ mock/        # Service mocks
 
 
 ---
@@ -90,12 +90,12 @@ curl --location 'localhost:8080/balance?upload_id=6769ca92-0546-427d-b747-5f2a37
 GET /transactions/issues
 
 **Query Param**\
-?upload_id=
-limit=    # default 10
-next_cursor=
-prev_cursor=
-status= # default FAILED, PENDING
-transaction_type= 
+?upload_id=\
+limit=    # default 10\
+next_cursor=\
+prev_cursor=\
+status= # default FAILED, PENDING\
+transaction_type= \
 
 **Curl**
 ```bash
