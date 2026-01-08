@@ -193,24 +193,16 @@ consumer:
 ```
 you can set the config.yaml in the root directory, like changing size binary for upload_worker, or change graceful_timeout
 ```bash
-Using make File
+using make File
 make run-api --> for running the system
 make mock-gen --> for generate mock file using go.ubser
 make test-cover --> for running unit test entire service
 ```
 
 📌 Design Notes
-- Decimal is used for monetary values to avoid floating-point errors 
-- Cursor pagination chosen over offset pagination for stability 
-- In-memory storage used for simplicity (can be swapped with DB)
-- Interfaces everywhere → testability
-
-📈 Possible Improvements
-- add client DB in contract for store and read the data
-- Distributed queue (Kafka)
-- File size validation 
-- CSV schema validation
-- Metrics (Prometheus)
+- decimal is used for monetary values to avoid floating-point errors 
+- cursor pagination chosen over offset pagination for stability 
+- interfaces everywhere for testability
 
 👤 Author\
 Rafely Chandra Rizkilillah
