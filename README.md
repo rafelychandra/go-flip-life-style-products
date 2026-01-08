@@ -176,7 +176,22 @@ Trade-offs in this project
 - hard to see the log because api, consumer, and worker running in the same binary
 
 🚀 How to Run\
-I already set example.csv in this project, you can use it for testing
+I already set example.csv in this project, you can use it for testing\
+You need a config.yaml
+```yaml
+app:
+  name: go-flip-life-style-products
+  port: 8080
+  graceful_timeout: 5s
+  time_out_api: 5s
+worker:
+  upload_worker:
+    size: 5
+consumer:
+  reconciliation_consumer:
+    size: 5
+```
+you can set the config.yaml in the root directory, like changing size binary for upload_worker, or change graceful_timeout
 ```bash
 Using make File
 make run-api --> for running the system
