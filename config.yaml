@@ -1,0 +1,12 @@
+app:
+  name: go-flip-life-style-products
+  port: 8080
+  graceful_timeout: 5s
+  time_out_api: 5s
+worker:
+  upload_worker:
+    size: 5
+consumer:
+  reconciliation_consumer:
+    size: 5
+
