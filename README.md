@@ -171,7 +171,7 @@ curl --location 'localhost:8080/transactions/issues?upload_id=683f1833-2086-4e7c
 - process the event, if already process will return nil because we have idempotency for protect duplicate recon
 - process the event max back off is 3x
 
-Trade-offs in your project (examples)
+Trade-offs in this project
 - hard to scale the system because we use in-memory storage
 - hard to see the log because api, consumer, and worker running in the same binary
 
