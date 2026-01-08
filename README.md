@@ -196,7 +196,7 @@ you can set the config.yaml in the root directory, like changing size binary for
 using make File
 make run-api --> for running the system
 make mock-gen --> for generate mock file using go.ubser
-make test-cover --> for running unit test entire service
+make test-cover --> for running unit test entire service (the result is inside folder screenshot)
 ```
 
 📌 Design Notes
